@@ -3,6 +3,8 @@ import Img1 from "../../assets/shirt/shirt.png";
 import Img2 from "../../assets/shirt/shirt2.png";
 import Img3 from "../../assets/shirt/shirt3.png";
 import { FaStar } from "react-icons/fa";
+
+
 const ProductsData = [
   {
     id: 1,
@@ -34,35 +36,36 @@ const TopProducts = ({ handleOrderPopup }) => {
         {/* Header section */}
         <div className="text-left mb-24">
           <p data-aos="fade-up" className="text-sm text-primary">
-            Sizin İçin En İyi Ürünler
+            En Popüler Ürünler
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            En İyi 3D Baskı Ürünleri
+            En İyi 3D Yazıcı Ürünleri
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
-            3D yazıcılar, filamentler ve aksesuarlar ile ilgili en iyi ürünleri keşfedin.
+            3D yazıcılar, filamentler ve aksesuarlar ile ilgili en kaliteli ve popüler ürünleri keşfedin.
           </p>
         </div>
 
         {/* Body section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-5 place-items-center">
           {ProductsData.map((data) => (
             <div
               key={data.id}
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
+              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-full sm:max-w-[300px]"
             >
-              {/* image section */}
-              <div className="h-[100px]">
+              {/* Image Section */}
+              <div className="h-[120px] sm:h-[160px] flex justify-center items-center">
                 <img
                   src={data.img}
                   alt={data.title}
                   className="max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md"
                 />
               </div>
-              {/* details section */}
+
+              {/* Details Section */}
               <div className="p-4 text-center">
-                {/* star rating */}
+                {/* Star Rating */}
                 <div className="w-full flex items-center justify-center gap-1">
                   <FaStar className="text-yellow-500" />
                   <FaStar className="text-yellow-500" />

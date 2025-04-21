@@ -6,7 +6,6 @@ import Img4 from "../../assets/baski/20250421_214138.jpg";
 import Img5 from "../../assets/baski/20250415_071449_001.jpg";
 import { FaStar } from "react-icons/fa6";
 
-
 const ProductsData = [
   {
     id: 1,
@@ -68,23 +67,23 @@ const Products = () => {
         </div>
         {/* Ürün kartları */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {ProductsData.map((data) => (
               <div
-                data-aos="fade-up"
-                data-aos-delay={data.aosDelay}
                 key={data.id}
                 className="space-y-3"
+                data-aos="fade-up"
+                data-aos-delay={data.aosDelay}
               >
                 <img
                   src={data.img}
                   alt={data.title}
-                  className="h-[220px] w-[150px] object-cover rounded-md"
+                  className="h-[220px] w-[150px] object-cover rounded-md mx-auto"
                 />
-                <div>
+                <div className="text-center">
                   <h3 className="font-semibold">{data.title}</h3>
                   <p className="text-sm text-gray-600">{data.color}</p>
-                  <div className="flex items-center gap-1">
+                  <div className="flex justify-center items-center gap-1">
                     <FaStar className="text-yellow-400" />
                     <span>{data.rating}</span>
                   </div>
@@ -93,8 +92,8 @@ const Products = () => {
             ))}
           </div>
           {/* Hepsini Gör butonu */}
-          <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md">
+          <div className="flex justify-center mt-8">
+            <button className="text-center bg-primary text-white py-2 px-6 rounded-md hover:bg-primary-dark transition duration-300">
               Tüm Ürünleri Gör
             </button>
           </div>
