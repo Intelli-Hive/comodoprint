@@ -8,27 +8,27 @@ import DarkMode from "./DarkMode";
 const Menu = [
   {
     id: 1,
-    name: "Ana Sayfa",
+    name: "Home",
     link: "/#",
   },
   {
     id: 2,
-    name: "Öne Çıkanlar",
+    name: "Top Rated",
     link: "/#services",
   },
   {
     id: 3,
-    name: "3D Ürünler",
+    name: "Kids Wear",
     link: "/#",
   },
   {
-    id: 4,
-    name: "Kişiye Özel Baskı",
+    id: 3,
+    name: "Mens Wear",
     link: "/#",
   },
   {
-    id: 5,
-    name: "Malzeme Türleri",
+    id: 3,
+    name: "Electronics",
     link: "/#",
   },
 ];
@@ -36,21 +36,20 @@ const Menu = [
 const DropdownLinks = [
   {
     id: 1,
-    name: "Trend Baskılar",
+    name: "Trending Products",
     link: "/#",
   },
   {
     id: 2,
-    name: "En Çok Tercih Edilenler",
+    name: "Best Selling",
     link: "/#",
   },
   {
     id: 3,
-    name: "Yüksek Kalite Ürünler",
+    name: "Top Rated",
     link: "/#",
   },
 ];
-
 
 const Navbar = ({ handleOrderPopup }) => {
   return (
@@ -61,7 +60,7 @@ const Navbar = ({ handleOrderPopup }) => {
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="Logo" className="w-10" />
-              ComodoPrint
+              Shopsy
             </a>
           </div>
 
@@ -82,7 +81,7 @@ const Navbar = ({ handleOrderPopup }) => {
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
-                Sipariş
+                Order
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
@@ -110,7 +109,7 @@ const Navbar = ({ handleOrderPopup }) => {
           {/* Simple Dropdown and Links */}
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
-              Trend Ürünlerimiz
+              Trending Products
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>

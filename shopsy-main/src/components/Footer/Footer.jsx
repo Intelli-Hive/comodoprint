@@ -9,7 +9,6 @@ import {
   FaMobileAlt,
 } from "react-icons/fa";
 
-// Banner stili
 const BannerImg = {
   backgroundImage: `url(${Banner})`,
   backgroundPosition: "bottom",
@@ -19,50 +18,102 @@ const BannerImg = {
   width: "100%",
 };
 
+const FooterLinks = [
+  {
+    title: "Home",
+    link: "/#",
+  },
+  {
+    title: "About",
+    link: "/#about",
+  },
+  {
+    title: "Contact",
+    link: "/#contact",
+  },
+  {
+    title: "Blog",
+    link: "/#blog",
+  },
+];
+
 const Footer = () => {
   return (
     <div style={BannerImg} className="text-white">
       <div className="container">
         <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
-          {/* Şirket Bilgileri */}
+          {/* company details */}
           <div className="py-8 px-4">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              <img src={footerLogo} alt="Comodo Printer" className="max-w-[50px]" />
-              Comodo Printer
+              <img src={footerLogo} alt="" className="max-w-[50px]" />
+              Shopsy
             </h1>
             <p>
-              Comodo Printer, ihtiyacınıza özel 3D baskı çözümleri sunar. Endüstriyel ve kişisel projeler için hızlı, kaliteli ve güvenilir hizmet sağlıyoruz.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
+              beatae ea recusandae blanditiis veritatis.
             </p>
           </div>
 
-          {/* Footer Linkleri */}
+          {/* Footer Links */}
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
-            {/* Sosyal medya linkleri */}
             <div>
-              <h3 className="font-semibold text-lg mb-4">Bizi Takip Edin</h3>
-              <div className="flex items-center gap-3 mt-6">
-                <a href="#" aria-label="Instagram">
-                  <FaInstagram className="text-3xl hover:text-primary transition duration-200" />
-                </a>
-                <a href="#" aria-label="Facebook">
-                  <FaFacebook className="text-3xl hover:text-primary transition duration-200" />
-                </a>
-                <a href="#" aria-label="Linkedin">
-                  <FaLinkedin className="text-3xl hover:text-primary transition duration-200" />
-                </a>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                  Important Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  {FooterLinks.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      key={link.title}
+                    >
+                      <span>{link.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                  Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  {FooterLinks.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      key={link.title}
+                    >
+                      <span>{link.title}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
-            {/* İletişim Bilgileri */}
-            <div className="mt-6 sm:mt-0">
-              <h3 className="font-semibold text-lg mb-4">İletişim</h3>
-              <div className="flex items-center gap-3">
-                <FaLocationArrow />
-                <p>Antalya, Türkiye</p>
+            {/* social links */}
+
+            <div>
+              <div className="flex items-center gap-3 mt-6">
+                <a href="#">
+                  <FaInstagram className="text-3xl" />
+                </a>
+                <a href="#">
+                  <FaFacebook className="text-3xl" />
+                </a>
+                <a href="#">
+                  <FaLinkedin className="text-3xl" />
+                </a>
               </div>
-              <div className="flex items-center gap-3 mt-3">
-                <FaMobileAlt />
-                <p>+90 505 998 2093</p>
+              <div className="mt-6">
+                <div className="flex items-center gap-3">
+                  <FaLocationArrow />
+                  <p>Noida, Uttar Pradesh</p>
+                </div>
+                <div className="flex items-center gap-3 mt-3">
+                  <FaMobileAlt />
+                  <p>+91 123456789</p>
+                </div>
               </div>
             </div>
           </div>

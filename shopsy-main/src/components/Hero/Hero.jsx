@@ -3,27 +3,28 @@ import Image1 from "../../assets/hero/women.png";
 import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
 import Slider from "react-slick";
+
 const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Mükemmel Kalite, Pürüzsüz Detaylar",
+    title: "Upto 50% off on all Men's Wear",
     description:
-      "Her çizgide yüksek çözünürlük. 3B baskı kalitesiyle tarzını bir üst seviyeye taşı.",
+      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
     img: Image2,
-    title: "Gerçekçi Dokular, Benzersiz Deneyim",
+    title: "30% off on all Women's Wear",
     description:
-      "Sanal değil, adeta gerçek gibi. Her ürün özenle modellenmiş ve detaylandırılmıştır.",
+      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
     img: Image3,
-    title: "%70'e Varan Dev 3D İndirim!",
+    title: "70% off on all Products Sale",
     description:
-      "Garanti bizden, seçim sizden! En popüler ürünlerde şimdi eşsiz fiyatlar ve sorunsuz destek.",
+      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
 
@@ -42,15 +43,14 @@ const Hero = ({ handleOrderPopup }) => {
   };
 
   return (
-    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200">
+    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 ">
       {/* background pattern */}
-      <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-[8]"></div>
-
+      <div className="h-[700px] w-[700px] bg-primary/40 absolute -top-1/2 right-0 rounded-3xl rotate-45 -z[8]"></div>
       {/* hero section */}
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
           {ImageList.map((data) => (
-            <div key={data.id}>
+            <div>
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 {/* text content section */}
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
@@ -79,11 +79,10 @@ const Hero = ({ handleOrderPopup }) => {
                       onClick={handleOrderPopup}
                       className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
-                      Sipariş Ver
+                      Order Now
                     </button>
                   </div>
                 </div>
-
                 {/* image section */}
                 <div className="order-1 sm:order-2">
                   <div
