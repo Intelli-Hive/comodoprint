@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/comodologo.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
@@ -8,27 +8,27 @@ import DarkMode from "./DarkMode";
 const Menu = [
   {
     id: 1,
-    name: "Home",
+    name: "Ana Sayfa",
     link: "/#",
   },
   {
     id: 2,
-    name: "Top Rated",
+    name: "Öne Çıkanlar",
     link: "/#services",
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: "3D Ürünler",
     link: "/#",
   },
   {
-    id: 3,
-    name: "Mens Wear",
+    id: 4,
+    name: "Kişiye Özel Baskı",
     link: "/#",
   },
   {
-    id: 3,
-    name: "Electronics",
+    id: 5,
+    name: "Malzeme Türleri",
     link: "/#",
   },
 ];
@@ -36,21 +36,20 @@ const Menu = [
 const DropdownLinks = [
   {
     id: 1,
-    name: "Trending Products",
+    name: "Trend Baskılar",
     link: "/#",
   },
   {
     id: 2,
-    name: "Best Selling",
+    name: "En Çok Tercih Edilenler",
     link: "/#",
   },
   {
     id: 3,
-    name: "Top Rated",
+    name: "Yüksek Kalite Ürünler",
     link: "/#",
   },
 ];
-
 const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -60,7 +59,7 @@ const Navbar = ({ handleOrderPopup }) => {
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="Logo" className="w-10" />
-              Shopsy
+              ComodoPrint
             </a>
           </div>
 
@@ -81,7 +80,7 @@ const Navbar = ({ handleOrderPopup }) => {
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
               <span className="group-hover:block hidden transition-all duration-200">
-                Order
+                Sipariş
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>

@@ -1,6 +1,6 @@
 import React from "react";
-import Image1 from "../../assets/hero/women.png";
-import Image2 from "../../assets/hero/shopping.png";
+import Image1 from "../../assets/baski/pil.png";
+import Image2 from "../../assets/baski/tablo.png";
 import Image3 from "../../assets/hero/sale.png";
 import Slider from "react-slick";
 
@@ -8,23 +8,23 @@ const ImageList = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on all Men's Wear",
+    title: "Mükemmel Kalite, Pürüzsüz Detaylar",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Her çizgide yüksek çözünürlük. 3B baskı kalitesiyle tarzını bir üst seviyeye taşı.",
   },
   {
     id: 2,
     img: Image2,
-    title: "30% off on all Women's Wear",
+    title: "Gerçekçi Dokular, Benzersiz Deneyim",
     description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Sanal değil, adeta gerçek gibi. Her ürün özenle modellenmiş ve detaylandırılmıştır.",
   },
   {
     id: 3,
     img: Image3,
-    title: "70% off on all Products Sale",
+    title: "%70'e Varan Dev 3D İndirim!",
     description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Garanti bizden, seçim sizden! En popüler ürünlerde şimdi eşsiz fiyatlar ve sorunsuz destek.",
   },
 ];
 
@@ -79,7 +79,7 @@ const Hero = ({ handleOrderPopup }) => {
                       onClick={handleOrderPopup}
                       className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
-                      Order Now
+                      Sipariş Ver
                     </button>
                   </div>
                 </div>
