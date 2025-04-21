@@ -3,30 +3,30 @@ import Img1 from "../../assets/shirt/shirt.png";
 import Img2 from "../../assets/shirt/shirt2.png";
 import Img3 from "../../assets/shirt/shirt3.png";
 import { FaStar } from "react-icons/fa";
-
 const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Casual Wear",
+    title: "3D Yazıcı",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Yüksek hassasiyetli 3D yazıcı, detaylı prototipler ve modeller üretmek için mükemmeldir. Hem profesyonellere hem de hobi amaçlı kullanıcılara uygundur.",
   },
   {
     id: 2,
     img: Img2,
-    title: "Printed shirt",
+    title: "3D Baskı Filamenti",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "PLA, ABS ve PETG dahil olmak üzere yüksek kaliteli 3D baskı sonuçları için farklı filament seçenekleri.",
   },
   {
     id: 3,
     img: Img3,
-    title: "Women shirt",
+    title: "3D Yazıcı Aksesuarları",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "3D baskı deneyiminizi geliştirecek, baskı tablası, ekstrüder ve daha fazlasını içeren temel aksesuarlar.",
   },
 ];
+
 const TopProducts = ({ handleOrderPopup }) => {
   return (
     <div>
@@ -34,20 +34,21 @@ const TopProducts = ({ handleOrderPopup }) => {
         {/* Header section */}
         <div className="text-left mb-24">
           <p data-aos="fade-up" className="text-sm text-primary">
-            Top Rated Products for you
+            Sizin İçin En İyi Ürünler
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Best Products
+            En İyi 3D Baskı Ürünleri
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+            3D yazıcılar, filamentler ve aksesuarlar ile ilgili en iyi ürünleri keşfedin.
           </p>
         </div>
+
         {/* Body section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
           {ProductsData.map((data) => (
             <div
+              key={data.id}
               data-aos="zoom-in"
               className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
             >
@@ -55,7 +56,7 @@ const TopProducts = ({ handleOrderPopup }) => {
               <div className="h-[100px]">
                 <img
                   src={data.img}
-                  alt=""
+                  alt={data.title}
                   className="max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md"
                 />
               </div>
@@ -76,7 +77,7 @@ const TopProducts = ({ handleOrderPopup }) => {
                   className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
                   onClick={handleOrderPopup}
                 >
-                  Order Now
+                  Şimdi Sipariş Et
                 </button>
               </div>
             </div>
