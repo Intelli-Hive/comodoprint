@@ -49,7 +49,7 @@ const AllProductsPage = () => {
             price: 349.99,
             discountPrice: 229.99,
             category: '3D Ürünler',
-            image: hareketli_ejderha
+            img: hareketli_ejderha
         },
         {
             id: 2,
@@ -57,7 +57,7 @@ const AllProductsPage = () => {
             price: 419.99,
             discountPrice: 289.99,
             category: 'Kişiye Özel Baskı',
-            image: batman_figur
+            img: batman_figur
         },
         {
             id: 3,
@@ -65,7 +65,7 @@ const AllProductsPage = () => {
             price: 199.99,
             discountPrice: 159.99,
             category: '3D Ürünler',
-            image: i18650_pil_kutusu
+            img: i18650_pil_kutusu
         },
         {
             id: 4,
