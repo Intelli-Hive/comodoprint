@@ -5,6 +5,15 @@ import Footer from '../Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import hareketli_ejderha from "../../assets/baski/hareketli_ejderha.jpg";
+import arac_ici_gozluk_tutucu from "../../assets/baski/arac_ici_gozluk_tutucu.jpg";
+import i2d_siyah_tablo_samurai from "../../assets/baski/2d_siyah_tablo_samurai.jpg";
+import i18650_pil_kutusu from "../../assets/baski/18650_pil_kutusu.jpg";
+import pikachu_figur from "../../assets/baski/pikachu_figur.jpg";
+import batman_figur from "../../assets/baski/batman_figur.jpg";
+import motosiklet_hiz_sabitleyici from "../../assets/baski/motosiklet_hiz_sabitleyici.jpg";
+
+
 const AllProductsPage = () => {
     const [currentCategory, setCurrentCategory] = useState('Tüm Ürünler');
     const [currentPage, setCurrentPage] = useState(1);
@@ -40,7 +49,7 @@ const AllProductsPage = () => {
             price: 349.99,
             discountPrice: 229.99,
             category: '3D Ürünler',
-            image: "../../assets/baski/hareketli_ejderha.jpg"
+            image: hareketli_ejderha
         },
         {
             id: 2,
@@ -48,7 +57,7 @@ const AllProductsPage = () => {
             price: 419.99,
             discountPrice: 289.99,
             category: 'Kişiye Özel Baskı',
-            image: '../../assets/baski/batman_figur.jpg'
+            image: batman_figur
         },
         {
             id: 3,
@@ -56,7 +65,7 @@ const AllProductsPage = () => {
             price: 199.99,
             discountPrice: 159.99,
             category: '3D Ürünler',
-            image: '../../assets/baski/18650_pil_kutusu.jpg'
+            image: i18650_pil_kutusu
         },
         {
             id: 4,
@@ -64,7 +73,7 @@ const AllProductsPage = () => {
             price: 179.99,
             discountPrice: 99.99,
             category: 'Öne Çıkanlar',
-            image: '../../assets/baski/pikachu_figur.jpg'
+            image: pikachu_figur
         },
         {
             id: 5,
@@ -72,7 +81,7 @@ const AllProductsPage = () => {
             price: 169.99,
             discountPrice: 79.99,
             category: '3D Ürünler',
-            image: '../../assets/baski/2d_siyah_tablo_samurai.jpg'
+            image: i2d_siyah_tablo_samurai
         },
         {
             id: 6,
@@ -80,7 +89,7 @@ const AllProductsPage = () => {
             price: 199.99,
             discountPrice: 119.99,
             category: 'Malzeme Türleri',
-            image: '../../assets/baski/motosiklet_hiz_sabitleyici.jpg'
+            image: motosiklet_hiz_sabitleyici
         },
         {
             id: 7,
@@ -96,7 +105,7 @@ const AllProductsPage = () => {
             price: 349.99,
             discountPrice: 104.99,
             category: '3D Ürünler',
-            image: './src/assets/baski/.jpg'
+            image: './src/assets/baski/pil.png'
         },
         {
             id: 9,
