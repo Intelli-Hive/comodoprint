@@ -40,7 +40,7 @@ const AllProductsPage = () => {
             price: 349.99,
             discountPrice: 229.99,
             category: '3D Ürünler',
-            image: "./src/assets/baski/hareketli_ejderha.jpg"
+            image: "../../assets/baski/hareketli_ejderha.jpg"
         },
         {
             id: 2,
@@ -48,7 +48,7 @@ const AllProductsPage = () => {
             price: 419.99,
             discountPrice: 289.99,
             category: 'Kişiye Özel Baskı',
-            image: './src/assets/baski/batman_figur.jpg'
+            image: '../../assets/baski/batman_figur.jpg'
         },
         {
             id: 3,
@@ -56,7 +56,7 @@ const AllProductsPage = () => {
             price: 199.99,
             discountPrice: 159.99,
             category: '3D Ürünler',
-            image: './src/assets/baski/18650_pil_kutusu.jpg'
+            image: '../../assets/baski/18650_pil_kutusu.jpg'
         },
         {
             id: 4,
@@ -64,7 +64,7 @@ const AllProductsPage = () => {
             price: 179.99,
             discountPrice: 99.99,
             category: 'Öne Çıkanlar',
-            image: './src/assets/baski/pikachu_figur.jpg'
+            image: '../../assets/baski/pikachu_figur.jpg'
         },
         {
             id: 5,
@@ -72,7 +72,7 @@ const AllProductsPage = () => {
             price: 169.99,
             discountPrice: 79.99,
             category: '3D Ürünler',
-            image: './src/assets/baski/2d_siyah_tablo_samurai.jpg'
+            image: '../../assets/baski/2d_siyah_tablo_samurai.jpg'
         },
         {
             id: 6,
@@ -80,7 +80,7 @@ const AllProductsPage = () => {
             price: 199.99,
             discountPrice: 119.99,
             category: 'Malzeme Türleri',
-            image: './src/assets/baski/motosiklet_hiz_sabitleyici.jpg'
+            image: '../../assets/baski/motosiklet_hiz_sabitleyici.jpg'
         },
         {
             id: 7,
@@ -88,7 +88,7 @@ const AllProductsPage = () => {
             price: 99.99,
             discountPrice: 29.99,
             category: 'Kişiye Özel Baskı',
-            image: './src/assets/baski/.jpg'
+            image: '../../assets/baski/.jpg'
         },
         {
             id: 8,
