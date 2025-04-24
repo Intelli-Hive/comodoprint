@@ -11,7 +11,7 @@ import DarkMode from "./DarkMode";
 const Menu = [
   { id: 1, name: "Ana Sayfa", link: "/" },
   { id: 2, name: "Öne Çıkanlar", link: "/" },
-  { id: 3, name: "3D Ürünler", link: "/comodoprint/products" },
+  { id: 3, name: "3D Ürünler", link: "/products" },
   { id: 4, name: "Kişiye Özel Baskı", link: "/" },
   { id: 5, name: "Malzeme Türleri", link: "/" },
 ];

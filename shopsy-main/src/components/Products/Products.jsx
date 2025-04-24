@@ -54,7 +54,7 @@ const Products = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/comodoprint/products");
+    navigate("/products");
   };
   return (
     <div className="mt-14 mb-12">

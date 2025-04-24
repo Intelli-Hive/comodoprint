@@ -34,7 +34,7 @@ const App = () => {
     <Router>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
         <Routes>
-          <Route path="/comodoprint" element={
+          <Route path="/" element={
             <>
               <Navbar handleOrderPopup={handleOrderPopup} />
               <Hero handleOrderPopup={handleOrderPopup} />
@@ -48,8 +48,8 @@ const App = () => {
               <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
             </>
           } />
-          <Route path="/comodoprint/products" element={<AllProductsPage />} />
-          <Route path="*" element={<Navigate to="/comodoprint" replace />} />
+          <Route path="/products" element={<AllProductsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>
