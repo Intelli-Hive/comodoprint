@@ -12,6 +12,10 @@ import i18650_pil_kutusu from "../../assets/baski/18650_pil_kutusu.jpg";
 import pikachu_figur from "../../assets/baski/pikachu_figur.jpg";
 import batman_figur from "../../assets/baski/batman_figur.jpg";
 import motosiklet_hiz_sabitleyici from "../../assets/baski/motosiklet_hiz_sabitleyici.jpg";
+import pati_kitap_ayraci from "../../assets/baski/pati_kitap_ayraci.jpg";
+import kurdan_silahi from "../../assets/baski/kurdan_silahi.jpg";
+import hareketli_chainmail from "../../assets/baski/hareketli_chainmail.jpg";
+
 
 
 const AllProductsPage = () => {
@@ -48,8 +52,8 @@ const AllProductsPage = () => {
             name: 'Hareketli Ejderha',
             price: 349.99,
             discountPrice: 229.99,
-            category: '3D Ürünler',
-            img: hareketli_ejderha
+            category: 'Öne Çıkanlar',
+            image: hareketli_ejderha
         },
         {
             id: 2,
@@ -57,15 +61,15 @@ const AllProductsPage = () => {
             price: 419.99,
             discountPrice: 289.99,
             category: 'Kişiye Özel Baskı',
-            img: batman_figur
+            image: batman_figur
         },
         {
             id: 3,
             name: '18650 Pil Kutusu',
             price: 199.99,
             discountPrice: 159.99,
-            category: '3D Ürünler',
-            img: i18650_pil_kutusu
+            category: 'Öne Çıkanlar',
+            image: i18650_pil_kutusu
         },
         {
             id: 4,
@@ -85,7 +89,7 @@ const AllProductsPage = () => {
         },
         {
             id: 6,
-            name: '3D Yazıcı Test Modeli',
+            name: 'Motosiklet Hız Sabitleyici',
             price: 199.99,
             discountPrice: 119.99,
             category: 'Malzeme Türleri',
@@ -93,35 +97,35 @@ const AllProductsPage = () => {
         },
         {
             id: 7,
-            name: 'Kişiselleştirilmiş Rozet Seti',
+            name: 'Araç İçi Gözlük Tutucu',
             price: 99.99,
-            discountPrice: 29.99,
+            discountPrice: 59.99,
             category: 'Kişiye Özel Baskı',
-            image: '../../assets/baski/.jpg'
+            image: arac_ici_gozluk_tutucu
         },
         {
             id: 8,
-            name: 'Mini Drone Parçaları',
-            price: 349.99,
-            discountPrice: 104.99,
+            name: 'Patili Kitap Ayracı',
+            price: 79.99,
+            discountPrice: 39.99,
             category: '3D Ürünler',
-            image: './src/assets/baski/pil.png'
+            image: pati_kitap_ayraci
         },
         {
             id: 9,
-            name: 'Özel Logo Basklı Kalem',
+            name: 'Kürdan Tabancası',
             price: 59.99,
             discountPrice: 17.99,
             category: 'Kişiye Özel Baskı',
-            image: '/path/to/product9.jpg'
+            image: kurdan_silahi
         },
         {
             id: 10,
-            name: 'Mimari Maket Seti',
-            price: 599.99,
-            discountPrice: 179.99,
+            name: 'Hareketli Örgü Zincir',
+            price: 129.99,
+            discountPrice: 79.99,
             category: 'Öne Çıkanlar',
-            image: '/path/to/product10.jpg'
+            image: hareketli_chainmail
         },
         {
             id: 11,
