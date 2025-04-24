@@ -1,10 +1,12 @@
 import React from "react";
-import Img1 from "../../assets/baski/20250415_071414.jpg";
-import Img2 from "../../assets/baski/20250418_084546.jpg";
-import Img3 from "../../assets/baski/20250421_192234.jpg";
-import Img4 from "../../assets/baski/20250421_214138.jpg";
-import Img5 from "../../assets/baski/20250415_071449_001.jpg";
+import Img1 from "../../assets/baski/hareketli_ejderha.jpg";
+import Img2 from "../../assets/baski/arac_ici_gozluk_tutucu.jpg";
+import Img3 from "../../assets/baski/2d_siyah_tablo_samurai.jpg";
+import Img4 from "../../assets/baski/18650_pil_kutusu.jpg";
+import Img5 from "../../assets/baski/pikachu_figur.jpg";
 import { FaStar } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+
 
 const ProductsData = [
   {
@@ -49,6 +51,11 @@ const ProductsData = [
   },
 ];
 const Products = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/comodoprint/products");
+  };
   return (
     <div className="mt-14 mb-12">
       <div className="container">
@@ -93,7 +100,7 @@ const Products = () => {
           </div>
           {/* view all button */}
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md">
+            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md" onClick={handleClick} >
               Tüm Ürünleri Gör
             </button>
           </div>
