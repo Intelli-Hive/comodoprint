@@ -14,12 +14,17 @@ import Popup from "./components/Popup/Popup";
 import AllProductsPage from "./components/ProductsPage/AllProductsPage";
 
 const App = () => {
-  const [orderPopup, setOrderPopup] = useState(false);
+  useEffect(() => {
+    // Sayfa yüklendiğinde sayfayı en üstüne kaydır
+    window.scrollTo(0, 0);
+  }, []);
   
+  const [orderPopup, setOrderPopup] = useState(false);
+
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
-  
+
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -29,7 +34,7 @@ const App = () => {
     });
     AOS.refresh();
   }, []);
-  
+
   return (
     <Router>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
@@ -42,7 +47,6 @@ const App = () => {
               <TopProducts handleOrderPopup={handleOrderPopup} />
               <Banner />
               <Subscribe />
-              <Products />
               <Testimonials />
               <Footer />
               <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />

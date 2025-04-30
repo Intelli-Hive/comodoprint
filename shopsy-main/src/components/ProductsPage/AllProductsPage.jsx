@@ -16,7 +16,12 @@ import pati_kitap_ayraci from "../../assets/baski/pati_kitap_ayraci.jpg";
 import kurdan_silahi from "../../assets/baski/kurdan_silahi.jpg";
 import hareketli_chainmail from "../../assets/baski/hareketli_chainmail.jpg";
 
-
+import dekoratif_duvar_susu_kus from "../../assets/baski/dekoratif_duvar_susu_kus.jpg";
+import ayarlanabilir_telefon_tutacagi from "../../assets/baski/ayarlanabilir_telefon_tutacagi.jpg";
+import minik_geko_figur from "../../assets/baski/minik_geko_figur.jpg";
+import delikli_mini_saksi from "../../assets/baski/delikli_mini_saksi.jpg";
+import katlanabilir_kiyafet_askisi from "../../assets/baski/katlanabilir_kiyafet_askisi.jpg";
+import dekoratif_masa_lambasi from "../../assets/baski/dekoratif_masa_lambasi.jpg";
 
 const AllProductsPage = () => {
     const [currentCategory, setCurrentCategory] = useState('Tüm Ürünler');
@@ -47,167 +52,23 @@ const AllProductsPage = () => {
 
     // Ürün verileri - bunları manuel olarak ekleyebilirsiniz
     const allProducts = [
-        {
-            id: 1,
-            name: 'Hareketli Ejderha',
-            price: 349.99,
-            discountPrice: 229.99,
-            category: 'Öne Çıkanlar',
-            image: hareketli_ejderha
-        },
-        {
-            id: 2,
-            name: 'Batman Figürü',
-            price: 419.99,
-            discountPrice: 289.99,
-            category: 'Kişiye Özel Baskı',
-            image: batman_figur
-        },
-        {
-            id: 3,
-            name: '18650 Pil Kutusu',
-            price: 199.99,
-            discountPrice: 159.99,
-            category: 'Öne Çıkanlar',
-            image: i18650_pil_kutusu
-        },
-        {
-            id: 4,
-            name: 'Pikachu Figürü',
-            price: 179.99,
-            discountPrice: 99.99,
-            category: 'Öne Çıkanlar',
-            image: pikachu_figur
-        },
-        {
-            id: 5,
-            name: 'Dekoratif Duvar Süsü',
-            price: 169.99,
-            discountPrice: 79.99,
-            category: '3D Ürünler',
-            image: i2d_siyah_tablo_samurai
-        },
-        {
-            id: 6,
-            name: 'Motosiklet Hız Sabitleyici',
-            price: 199.99,
-            discountPrice: 119.99,
-            category: 'Malzeme Türleri',
-            image: motosiklet_hiz_sabitleyici
-        },
-        {
-            id: 7,
-            name: 'Araç İçi Gözlük Tutucu',
-            price: 99.99,
-            discountPrice: 59.99,
-            category: 'Kişiye Özel Baskı',
-            image: arac_ici_gozluk_tutucu
-        },
-        {
-            id: 8,
-            name: 'Patili Kitap Ayracı',
-            price: 79.99,
-            discountPrice: 39.99,
-            category: '3D Ürünler',
-            image: pati_kitap_ayraci
-        },
-        {
-            id: 9,
-            name: 'Kürdan Tabancası',
-            price: 59.99,
-            discountPrice: 17.99,
-            category: 'Kişiye Özel Baskı',
-            image: kurdan_silahi
-        },
-        {
-            id: 10,
-            name: 'Hareketli Örgü Zincir',
-            price: 129.99,
-            discountPrice: 79.99,
-            category: 'Öne Çıkanlar',
-            image: hareketli_chainmail
-        },
-        {
-            id: 11,
-            name: 'Dekoratif Masa Süsü',
-            price: 129.99,
-            discountPrice: 38.99,
-            category: 'Malzeme Türleri',
-            image: '/path/to/product11.jpg'
-        },
-        {
-            id: 12,
-            name: 'Teknolojik Telefon Standı',
-            price: 89.99,
-            discountPrice: 26.99,
-            category: '3D Ürünler',
-            image: '/path/to/product12.jpg'
-        },
-        {
-            id: 13,
-            name: 'Kişiye Özel Anahtarlık',
-            price: 49.99,
-            discountPrice: 14.99,
-            category: 'Kişiye Özel Baskı',
-            image: '/path/to/product13.jpg'
-        },
-        {
-            id: 14,
-            name: 'Akıllı Ev Sensör Kutusu',
-            price: 179.99,
-            discountPrice: 53.99,
-            category: '3D Ürünler',
-            image: '/path/to/product14.jpg'
-        },
-        {
-            id: 15,
-            name: 'RGB Gaming Klavye Tuşları',
-            price: 149.99,
-            discountPrice: 44.99,
-            category: 'Öne Çıkanlar',
-            image: '/path/to/product15.jpg'
-        },
-        {
-            id: 16,
-            name: 'Metal Efektli Figür',
-            price: 229.99,
-            discountPrice: 68.99,
-            category: 'Malzeme Türleri',
-            image: '/path/to/product16.jpg'
-        },
-        {
-            id: 17,
-            name: 'Şeffaf Reçine Bileklik',
-            price: 79.99,
-            discountPrice: 23.99,
-            category: 'Malzeme Türleri',
-            image: '/path/to/product17.jpg'
-        },
-        {
-            id: 18,
-            name: 'Şirket Logolu Kupa',
-            price: 69.99,
-            discountPrice: 20.99,
-            category: 'Kişiye Özel Baskı',
-            image: '/path/to/product18.jpg'
-        },
-        {
-            id: 19,
-            name: 'Özel Tasarım Mücevher Kutusu',
-            price: 199.99,
-            discountPrice: 59.99,
-            category: 'Öne Çıkanlar',
-            image: '/path/to/product19.jpg'
-        },
-        {
-            id: 20,
-            name: 'Karbon Fiber Görünümlü Kalemlik',
-            price: 119.99,
-            discountPrice: 35.99,
-            category: 'Malzeme Türleri',
-            image: '/path/to/product20.jpg'
-        },
-    ];
+        { id: 1, img: hareketli_ejderha, title: "Hareketli Ejderha", rating: 5.0, color: "Sarı", aosDelay: "0", category: "Öne Çıkanlar", price: 319.99, discountPrice: 229.99 },
+        { id: 2, img: batman_figur, title: "Batman Figürü", rating: 4.9, color: "Siyah", aosDelay: "0", category: "Kişiye Özel Baskı", price: 419.99, discountPrice: 289.99 },
+        { id: 3, img: dekoratif_masa_lambasi, title: "Dekoratif Masa Lambası", rating: 5.0, color: "Siyah", aosDelay: "800", category: "Öne Çıkanlar", price: 329.99, discountPrice: 249.99 },
+        { id: 4, img: pikachu_figur, title: "Pikachu Figürü", rating: 4.6, color: "Sarı", aosDelay: "400", category: "Öne Çıkanlar", price: 179.99, discountPrice: 99.99 },
+        { id: 5, img: i2d_siyah_tablo_samurai, title: "Dekoratif Duvar Süsü Samurai", rating: 4.7, color: "Siyah", aosDelay: "200", category: "3D Modellemeler", price: 169.99, discountPrice: 79.99 },
+        { id: 6, img: minik_geko_figur, title: "Minik Geko Figürü", rating: 4.8, color: "Siyah", aosDelay: "800", category: "Öne Çıkanlar", price: 129.99, discountPrice: 79.99 },
+        { id: 7, img: dekoratif_duvar_susu_kus, title: "Dekoratif Duvar Süsü Kuş", rating: 4.8, color: "Siyah", aosDelay: "800", category: "Öne Çıkanlar", price: 229.99, discountPrice: 179.99 },
+        { id: 8, img: katlanabilir_kiyafet_askisi, title: "Katlanabilir Kıyafet Askısı", rating: 4.8, color: "Siyah", aosDelay: "800", category: "Öne Çıkanlar", price: 129.99, discountPrice: 79.99 },
+        { id: 9, img: motosiklet_hiz_sabitleyici, title: "Motosiklet Hız Sabitleyici", rating: 4.5, color: "Siyah", aosDelay: "200", category: "Malzeme Türleri", price: 199.99, discountPrice: 119.99 },
+        { id: 10, img: ayarlanabilir_telefon_tutacagi, title: "Ayarlanabilir Telefon Tutacağı", rating: 4.8, color: "Siyah", aosDelay: "800", category: "Öne Çıkanlar", price: 129.99, discountPrice: 149.99 },
+        { id: 11, img: i18650_pil_kutusu, title: "18650 Pil Kutusu", rating: 4.9, color: "Sarı", aosDelay: "300", category: "Öne Çıkanlar", price: 199.99, discountPrice: 159.99 },
+        { id: 12, img: arac_ici_gozluk_tutucu, title: "Araç İçi Gözlük Tutucu", rating: 4.8, color: "Beyaz", aosDelay: "100", category: "Kişiye Özel Baskı", price: 99.99, discountPrice: 59.99 },
+        { id: 13, img: pati_kitap_ayraci, title: "Patili Kitap Ayracı", rating: 4.3, color: "Pembe", aosDelay: "400", category: "3D Modellemeler", price: 79.99, discountPrice: 39.99 },
+        { id: 14, img: kurdan_silahi, title: "Kürdan Tabancası", rating: 4.2, color: "Mavi", aosDelay: "600", category: "Kişiye Özel Baskı", price: 59.99, discountPrice: 17.99 },
+        { id: 15, img: hareketli_chainmail, title: "Hareketli Örgü Zincir", rating: 4.8, color: "Gri", aosDelay: "800", category: "Öne Çıkanlar", price: 129.99, discountPrice: 79.99 },
+        { id: 16, img: delikli_mini_saksi, title: "Delikli Mini Saksı", rating: 4.8, color: "Siyah", aosDelay: "800", category: "Öne Çıkanlar", price: 19.99, discountPrice: 9.99 },
+      ];
 
     // Kategoriye göre ürünleri filtrele
     const filteredProducts = currentCategory === 'Tüm Ürünler'
@@ -310,8 +171,8 @@ const AllProductsPage = () => {
                                 {/* 🔥 BURASI GÖRSELİN OLDUĞU KISIM */}
                                 <div className="h-[380px] w-full overflow-hidden">
                                     <img
-                                        src={product.image}
-                                        alt={product.name}
+                                        src={product.img}
+                                        alt={product.title}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -324,7 +185,7 @@ const AllProductsPage = () => {
                                             </span>
                                         </div>
                                         <h3 className="font-semibold text-lg mb-1 dark:text-gray-100">
-                                            {product.name}
+                                            {product.title}
                                         </h3>
                                         <div className="flex items-center mb-3">
                                             <span className="line-through text-gray-500 dark:text-gray-400 mr-2">
